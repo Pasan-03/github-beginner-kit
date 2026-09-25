@@ -41,7 +41,7 @@
     /* Top Progress Bar */
     .progress-bar-container {
       width: 100%;
-      height: 5px;
+      height: 4px;
       background: #21262d;
       position: absolute;
       top: 0;
@@ -71,36 +71,29 @@
       align-items: center;
       gap: 12px;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--text-light);
     }
 
     .git-icon {
       fill: #f05032;
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
     }
 
     .header-controls {
       display: flex;
-      gap: 14px;
+      gap: 12px;
       align-items: center;
     }
 
-    .slide-indicator {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      font-variant-numeric: tabular-nums;
-      font-weight: 600;
-    }
-
     .mode-badge {
-      background: rgba(88, 166, 255, 0.15);
+      background: rgba(88, 166, 255, 0.12);
       color: var(--accent-blue);
       border: 1px solid rgba(88, 166, 255, 0.3);
       padding: 3px 10px;
       border-radius: 20px;
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       font-weight: 600;
     }
 
@@ -111,7 +104,7 @@
       border-radius: 6px;
       padding: 6px 12px;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       transition: all 0.2s;
     }
     button.icon-btn:hover {
@@ -125,7 +118,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px 28px;
+      padding: 16px 24px;
       position: relative;
       overflow: hidden;
     }
@@ -133,15 +126,15 @@
     .slide {
       display: none;
       width: 100%;
-      max-width: 1080px;
+      max-width: 1040px;
       background: var(--card-dark);
       border: 1px solid var(--card-border);
       border-radius: 14px;
-      padding: 32px 40px;
-      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6);
-      max-height: 86vh;
+      padding: 28px 36px 20px;
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.6);
+      max-height: 84vh;
       overflow-y: auto;
-      animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: slideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .slide.active {
@@ -149,7 +142,7 @@
     }
 
     @keyframes slideIn {
-      from { opacity: 0; transform: translateY(10px) scale(0.99); }
+      from { opacity: 0; transform: translateY(8px) scale(0.99); }
       to { opacity: 1; transform: translateY(0) scale(1); }
     }
 
@@ -157,55 +150,55 @@
     .slide-tag {
       display: inline-block;
       text-transform: uppercase;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       letter-spacing: 1px;
       font-weight: 700;
       color: var(--accent-blue);
       background: rgba(88, 166, 255, 0.1);
-      padding: 4px 10px;
+      padding: 3px 10px;
       border-radius: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     h1.title {
-      font-size: 2.2rem;
+      font-size: 2rem;
       color: var(--text-light);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       line-height: 1.25;
     }
 
     h2.title {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       color: var(--text-light);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .subtitle {
-      font-size: 1.05rem;
+      font-size: 0.98rem;
       color: var(--text-muted);
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     /* Step Timeline Chips (Clickable) */
     .step-stepper {
       display: flex;
       gap: 10px;
-      margin: 18px 0;
+      margin: 14px 0 18px;
       flex-wrap: wrap;
     }
 
     .step-chip {
-      padding: 8px 16px;
-      border-radius: 24px;
+      padding: 6px 14px;
+      border-radius: 20px;
       background: #1c2430;
       border: 1px solid var(--card-border);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
       color: var(--text-muted);
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       transition: all 0.25s ease;
     }
 
@@ -218,20 +211,20 @@
       background: #1f6feb;
       border-color: #58a6ff;
       color: #ffffff;
-      box-shadow: 0 0 14px rgba(31, 111, 235, 0.45);
+      box-shadow: 0 0 12px rgba(31, 111, 235, 0.45);
       transform: translateY(-2px);
     }
 
     .step-chip.done {
-      background: #193822;
-      border-color: #3fb950;
+      background: #162c1e;
+      border-color: #2ea043;
       color: #7ee787;
     }
 
     /* Step Content Area */
     .step-panel {
       display: none;
-      animation: fadeInStep 0.35s ease;
+      animation: fadeInStep 0.25s ease;
     }
 
     .step-panel.active {
@@ -239,7 +232,7 @@
     }
 
     @keyframes fadeInStep {
-      from { opacity: 0; transform: translateY(6px); }
+      from { opacity: 0; transform: translateY(4px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
@@ -248,26 +241,35 @@
       background: #090d13;
       border: 1px solid var(--card-border);
       border-radius: 12px;
-      padding: 22px;
-      margin: 16px 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+      padding: 16px 20px;
+      margin: 12px 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
       position: relative;
     }
 
     .stage-zone {
+      flex: 1;
       background: #131922;
       border: 2px dashed #30363d;
       border-radius: 10px;
-      padding: 14px;
-      min-height: 140px;
+      padding: 12px 10px;
+      min-height: 120px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       position: relative;
       transition: all 0.3s ease;
+    }
+
+    .stage-divider-arrow {
+      color: #484f58;
+      font-size: 1.2rem;
+      font-weight: bold;
+      user-select: none;
     }
 
     .stage-zone.highlight {
@@ -289,28 +291,28 @@
     }
 
     .zone-title {
-      font-size: 0.78rem;
+      font-size: 0.74rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: var(--text-muted);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     /* Animated Items */
     .file-badge {
-      padding: 8px 12px;
+      padding: 6px 12px;
       background: #21262d;
       border: 1px solid var(--card-border);
       border-radius: 6px;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       font-family: monospace;
       color: var(--text-light);
       display: flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-      margin-top: 6px;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      margin-top: 4px;
     }
 
     .file-badge.modified {
@@ -324,20 +326,20 @@
       border-color: var(--accent-green);
       color: var(--accent-green);
       background: rgba(63, 185, 80, 0.15);
-      animation: bounceIn 0.4s ease;
+      animation: bounceIn 0.35s ease;
     }
 
     .commit-box {
       background: #1f6feb;
       color: white;
-      padding: 8px 12px;
+      padding: 6px 12px;
       border-radius: 8px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
       text-align: center;
       box-shadow: 0 4px 10px rgba(31, 111, 235, 0.3);
-      animation: bounceIn 0.4s ease;
-      margin-top: 6px;
+      animation: bounceIn 0.35s ease;
+      margin-top: 4px;
     }
 
     .cloud-status {
@@ -345,16 +347,16 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      font-size: 0.8rem;
+      gap: 4px;
+      font-size: 0.78rem;
       color: var(--text-muted);
-      margin-top: 10px;
+      margin-top: 6px;
     }
 
     .cloud-status.synced {
       color: var(--accent-green);
       font-weight: 600;
-      animation: bounceIn 0.4s ease;
+      animation: bounceIn 0.35s ease;
     }
 
     @keyframes pulseRed {
@@ -364,8 +366,8 @@
     }
 
     @keyframes bounceIn {
-      0% { transform: scale(0.6); opacity: 0; }
-      70% { transform: scale(1.08); }
+      0% { transform: scale(0.7); opacity: 0; }
+      70% { transform: scale(1.06); }
       100% { transform: scale(1); opacity: 1; }
     }
 
@@ -375,7 +377,7 @@
       border: 1px solid var(--card-border);
       border-radius: 8px;
       overflow: hidden;
-      margin-top: 14px;
+      margin-top: 12px;
     }
 
     .terminal-bar {
@@ -388,8 +390,8 @@
     }
 
     .dot {
-      width: 10px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
     }
     .dot.red { background: #ff5f56; }
@@ -397,100 +399,63 @@
     .dot.green { background: #27c93f; }
 
     .terminal-title {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: var(--text-muted);
       margin-left: 6px;
       font-family: monospace;
     }
 
     .terminal-body {
-      padding: 14px 18px;
+      padding: 12px 16px;
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 0.9rem;
-      line-height: 1.6;
+      font-size: 0.88rem;
+      line-height: 1.55;
       color: #79c0ff;
     }
 
-    .term-prompt {
-      color: var(--accent-green);
-      font-weight: 600;
-    }
-    .term-cmd {
-      color: #ffffff;
-      font-weight: 700;
-    }
-    .term-out {
-      color: #8b949e;
-      display: block;
-      margin-top: 4px;
-    }
-    .term-highlight {
-      color: var(--accent-blue);
-    }
-    .term-success {
-      color: var(--accent-green);
-    }
-    .term-error {
-      color: var(--accent-red);
-    }
+    .term-prompt { color: var(--accent-green); font-weight: 600; }
+    .term-cmd { color: #ffffff; font-weight: 700; }
+    .term-out { color: #8b949e; display: block; margin-top: 3px; }
 
     /* Explanation Cards */
     .action-explainer {
       background: #161b22;
       border-left: 4px solid var(--accent-blue);
-      padding: 12px 16px;
+      padding: 10px 14px;
       border-radius: 0 8px 8px 0;
-      margin-top: 12px;
-      font-size: 0.95rem;
-      line-height: 1.6;
+      margin-top: 10px;
+      font-size: 0.92rem;
+      line-height: 1.55;
     }
 
-    .action-explainer strong {
-      color: var(--text-light);
-    }
+    .action-explainer strong { color: var(--text-light); }
 
-    /* Step Navigation Controls Inside Slide */
-    .step-actions-bar {
+    /* Slide Card Footer: Clean Status Indicator (NO duplicate buttons) */
+    .slide-footer-status {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 18px;
-      padding-top: 14px;
+      margin-top: 16px;
+      padding-top: 12px;
       border-top: 1px solid var(--card-border);
     }
 
-    .sub-btn {
-      padding: 9px 18px;
-      border-radius: 6px;
-      font-size: 0.9rem;
+    .step-pill {
+      font-size: 0.8rem;
       font-weight: 600;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      border: 1px solid var(--card-border);
-      transition: all 0.2s ease;
+      color: var(--accent-blue);
+      background: rgba(88, 166, 255, 0.1);
+      padding: 3px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(88, 166, 255, 0.25);
     }
 
-    .sub-btn.next-step {
-      background: #238636;
-      color: white;
-      border-color: rgba(240, 246, 252, 0.1);
-    }
-    .sub-btn.next-step:hover {
-      background: #2ea043;
-      transform: translateY(-1px);
+    .step-prompt-text {
+      font-size: 0.82rem;
+      color: var(--text-muted);
     }
 
-    .sub-btn.prev-step {
-      background: #21262d;
-      color: var(--text-light);
-    }
-    .sub-btn.prev-step:hover {
-      background: #30363d;
-    }
-
-    /* Bottom Global Controls */
+    /* Fixed Bottom Control Bar (SINGLE Source of Truth for buttons) */
     footer.bottom-bar {
       padding: 12px 28px;
       display: flex;
@@ -501,14 +466,39 @@
       z-index: 50;
     }
 
+    .bottom-status-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .bottom-slide-info {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-light);
+    }
+
+    .shortcut-hint {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    kbd {
+      background: #21262d;
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
     .nav-buttons {
       display: flex;
       gap: 12px;
     }
 
     .nav-btn {
-      padding: 10px 20px;
-      font-size: 0.95rem;
+      padding: 10px 22px;
+      font-size: 0.92rem;
       font-weight: 600;
       border-radius: 6px;
       cursor: pointer;
@@ -523,7 +513,7 @@
       background: #21262d;
       color: var(--text-light);
     }
-    .nav-btn.prev:hover {
+    .nav-btn.prev:hover:not(:disabled) {
       background: #30363d;
     }
 
@@ -531,89 +521,136 @@
       background: #1f6feb;
       color: #fff;
       border-color: rgba(240, 246, 252, 0.1);
+      box-shadow: 0 2px 8px rgba(31, 111, 235, 0.35);
     }
     .nav-btn.next:hover {
       background: #388bfd;
+      transform: translateY(-1px);
     }
 
-    .shortcut-hint {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-    kbd {
-      background: #21262d;
-      border: 1px solid var(--card-border);
-      border-radius: 4px;
-      padding: 2px 6px;
-      font-size: 0.8rem;
-      color: var(--text-light);
-    }
-
-    /* Branch Tree Diagram Styling */
-    .branch-tree {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
+    /* Redesigned Branch Tree: No Crammed Text! */
+    .branch-tree-container {
       background: #090d13;
-      border-radius: 8px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 22px 24px 18px;
       margin: 14px 0;
       overflow-x: auto;
     }
 
+    .branch-tree-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .branch-node-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      z-index: 2;
+      min-width: 80px;
+    }
+
     .branch-node {
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       background: #21262d;
       border: 2px solid var(--accent-blue);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.8rem;
-      font-weight: bold;
+      font-size: 0.88rem;
+      font-weight: 700;
       color: white;
-      position: relative;
-      transition: all 0.3s;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
     .branch-node.active-node {
       background: #1f6feb;
-      box-shadow: 0 0 14px rgba(31, 111, 235, 0.7);
-      transform: scale(1.15);
+      box-shadow: 0 0 16px rgba(31, 111, 235, 0.75);
+      transform: scale(1.12);
+      border-color: #58a6ff;
     }
 
     .branch-node.feature-node {
       border-color: var(--accent-purple);
-      background: rgba(188, 140, 255, 0.2);
+      background: #161224;
+      color: var(--accent-purple);
     }
     .branch-node.feature-node.active-node {
       background: #8957e5;
-      box-shadow: 0 0 14px rgba(137, 87, 229, 0.7);
+      color: white;
+      box-shadow: 0 0 16px rgba(137, 87, 229, 0.75);
+      border-color: #d2a8ff;
     }
 
     .branch-node.revert-node {
       border-color: var(--accent-green);
-      background: rgba(63, 185, 80, 0.2);
+      background: #122419;
+      color: var(--accent-green);
     }
     .branch-node.revert-node.active-node {
       background: #238636;
-      box-shadow: 0 0 14px rgba(35, 134, 54, 0.7);
+      color: white;
+      box-shadow: 0 0 16px rgba(35, 134, 54, 0.75);
+      border-color: #56d364;
     }
 
     .branch-node.bug-node {
       border-color: var(--accent-red);
-      background: rgba(255, 123, 114, 0.2);
-      text-decoration: line-through;
+      background: rgba(255, 123, 114, 0.15);
+      color: var(--accent-red);
     }
 
-    .branch-line {
+    .branch-node-label {
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: #161b22;
+      border: 1px solid var(--card-border);
+      padding: 3px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+
+    .branch-node-label.active-label {
+      color: #ffffff;
+      border-color: var(--accent-blue);
+      background: rgba(31, 111, 235, 0.25);
+    }
+
+    .branch-node-label.purple {
+      color: var(--accent-purple);
+      border-color: rgba(188, 140, 255, 0.4);
+    }
+
+    .branch-node-label.green {
+      color: var(--accent-green);
+      border-color: rgba(63, 185, 80, 0.4);
+    }
+
+    .branch-node-label.red {
+      color: var(--accent-red);
+      border-color: rgba(255, 123, 114, 0.4);
+    }
+
+    .branch-connector-line {
       height: 3px;
       background: var(--card-border);
       flex: 1;
-      min-width: 30px;
+      margin: 0 4px;
+      margin-bottom: 26px; /* align with circles */
+      transition: all 0.3s ease;
     }
-    .branch-line.active-line {
+
+    .branch-connector-line.active-line {
       background: var(--accent-blue);
       box-shadow: 0 0 8px rgba(88, 166, 255, 0.5);
     }
@@ -623,7 +660,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
-      margin: 16px 0;
+      margin: 14px 0;
     }
 
     .info-card {
@@ -640,11 +677,12 @@
     .info-card h4 {
       color: var(--text-light);
       margin-bottom: 8px;
+      font-size: 1.05rem;
     }
 
     .info-card ul {
       list-style-position: inside;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       line-height: 1.6;
     }
   </style>
@@ -660,11 +698,10 @@
   <header>
     <div class="brand">
       <svg class="git-icon" viewBox="0 0 24 24"><path d="M2.6 10.59L8.38 4.8a1.37 1.37 0 0 1 1.94 0l1.24 1.25L9.64 8a1.73 1.73 0 0 0-.48 1.48L7.9 10.74a1.73 1.73 0 1 0 1.25 1.25l1.24-1.25a1.72 1.72 0 0 0 1.5-.47l2.84 2.84a1.7 1.7 0 0 0-.47 1.5 1.73 1.73 0 1 0 1.48-.48l-2.84-2.84a1.72 1.72 0 0 0 .47-1.5 1.73 1.73 0 0 0-1.48-.48L10.66 9.3a1.73 1.73 0 0 0-1.25-1.25L10.65 6.8l10.75 10.75a1.37 1.37 0 0 1 0 1.94l-5.78 5.79a1.37 1.37 0 0 1-1.94 0L2.6 14.21a1.37 1.37 0 0 1 0-1.94z"/></svg>
-      <span>Git & GitHub Interactive Deck</span>
-      <span class="mode-badge">⚡ Animated Step-by-Step</span>
+      <span>Git & GitHub Learning Playground</span>
+      <span class="mode-badge">⚡ Animated Guide</span>
     </div>
     <div class="header-controls">
-      <span class="slide-indicator" id="slide-num">Slide 1 / 8</span>
       <button class="icon-btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
       <a href="GUIDEBOOK.md" target="_blank" style="text-decoration:none;"><button class="icon-btn">📖 Open Guidebook</button></a>
     </div>
@@ -700,7 +737,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          👉 <strong>Interactive Navigation:</strong> Click <strong>"Next Move ⏭️"</strong> below or press the <kbd>→</kbd> right arrow / <kbd>Space</kbd> on your keyboard to reveal each step one-by-one!
+          👉 <strong>How to Navigate:</strong> Use the <strong>"Next Move ⏭️"</strong> button at the bottom of the screen or press <kbd>→</kbd> / <kbd>Space</kbd> on your keyboard to reveal each move step-by-step!
         </div>
       </div>
 
@@ -708,7 +745,7 @@
       <div class="step-panel" data-step-index="1">
         <div class="info-card green">
           <h4>🎯 What You Will Master In This Deck</h4>
-          <ul style="line-height: 1.8; margin-top: 8px;">
+          <ul style="line-height: 1.8; margin-top: 6px;">
             <li>1️⃣ <strong>The Push Pipeline:</strong> File edit ➔ <code>git add</code> ➔ <code>git commit</code> ➔ <code>git push</code></li>
             <li>2️⃣ <strong>Branching:</strong> Create parallel universes with <code>git switch -c</code></li>
             <li>3️⃣ <strong>Merging:</strong> Bringing features back into <code>main</code> safely</li>
@@ -718,17 +755,13 @@
           </ul>
         </div>
         <div class="action-explainer">
-          Ready to begin? Click <strong>"Next Slide ▶"</strong> to start the animated Push pipeline!
+          Ready to begin? Click <strong>"Next Move ⏭️"</strong> to start the animated Push pipeline!
         </div>
       </div>
 
-      <!-- Sub-step buttons -->
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s1-tracker">Step 1 of 2</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="nextSubStep()">Next Move ⏭️</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s1-tracker">Move 1 of 2</span>
+        <span class="step-prompt-text">Use bottom button or press <kbd>→</kbd> / <kbd>Space</kbd></span>
       </div>
     </div>
 
@@ -755,12 +788,16 @@
           </div>
         </div>
 
+        <div class="stage-divider-arrow">➔</div>
+
         <div class="stage-zone" id="s2-zone-stage">
           <span class="zone-title">2. Staging Area</span>
           <div id="s2-file-stage" style="display:none;" class="file-badge staged">
             ✅ index.html (ready)
           </div>
         </div>
+
+        <div class="stage-divider-arrow">➔</div>
 
         <div class="stage-zone" id="s2-zone-repo">
           <span class="zone-title">3. Local Repo</span>
@@ -769,16 +806,17 @@
           </div>
         </div>
 
+        <div class="stage-divider-arrow">➔</div>
+
         <div class="stage-zone" id="s2-zone-cloud">
           <span class="zone-title">4. GitHub Cloud</span>
           <div id="s2-cloud-status" class="cloud-status">
-            <span style="font-size:1.8rem;">☁️</span>
+            <span style="font-size:1.6rem;">☁️</span>
             <span id="s2-cloud-text">Awaiting Push...</span>
           </div>
         </div>
       </div>
 
-      <!-- Step Panels -->
       <!-- Step 0: Edit -->
       <div class="step-panel active" data-step-index="0">
         <div class="terminal-window">
@@ -794,7 +832,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 1:</strong> You modified <code>src/index.html</code> in your editor. It's in your <strong>Working Directory</strong> (red/unstaged). Git knows it changed, but it isn't ready for a commit yet.
+          <strong>Move 1:</strong> You modified <code>src/index.html</code> in your editor. It's in your <strong>Working Directory</strong> (red/unstaged). Git sees the change, but it isn't ready for commit yet.
         </div>
       </div>
 
@@ -813,7 +851,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 2:</strong> Running <code>git add .</code> (or <code>git add src/index.html</code>) moves the file into the <strong>Staging Area</strong>! It turns green and is now drafted for the snapshot.
+          <strong>Move 2:</strong> Running <code>git add .</code> (or <code>git add src/index.html</code>) stages the file! It turns green and is now drafted for the snapshot.
         </div>
       </div>
 
@@ -831,7 +869,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 3:</strong> Running <code>git commit</code> packages the staged files into a permanent snapshot stored in your <strong>Local Repository</strong> with hash <code>c8f2a1</code>.
+          <strong>Move 3:</strong> Running <code>git commit</code> packages the staged files into a permanent snapshot stored in your <strong>Local Repository</strong> with hash <code>c8f2a1</code>.
         </div>
       </div>
 
@@ -844,24 +882,19 @@
           </div>
           <div class="terminal-body">
             <span class="term-prompt">user@mac:~$ </span><span class="term-cmd">git push origin main</span><br>
-            <span class="term-out">Enumerating objects: 5, done.</span>
             <span class="term-out">Writing objects: 100% (3/3), 320 bytes, done.</span>
             <span class="term-out">To https://github.com/farhadlafarie/github-beginner-kit.git</span>
             <span class="term-out" style="color:var(--accent-green);">&nbsp;&nbsp;main -> main</span>
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 4:</strong> Running <code>git push origin main</code> uploads your local commit to <strong>GitHub Cloud</strong>! Your code is now safely backed up and visible to your team.
+          <strong>Move 4:</strong> Running <code>git push origin main</code> uploads your local commit to <strong>GitHub Cloud</strong>! Your code is now safely backed up and visible to your team.
         </div>
       </div>
 
-      <!-- Sub-step buttons -->
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s2-tracker">Step 1 of 4</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="nextSubStep()">Next Move ⏭️</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s2-tracker">Move 1 of 4: Edit File</span>
+        <span class="step-prompt-text">Click chips above or Next Move below</span>
       </div>
     </div>
 
@@ -879,15 +912,39 @@
         <div class="step-chip" onclick="jumpToSubStep(3)">4. Switch Back to Main</div>
       </div>
 
-      <!-- Animated Branch Visual -->
-      <div class="branch-tree">
-        <div class="branch-node active-node" id="s3-n1">C1</div>
-        <div class="branch-line active-line"></div>
-        <div class="branch-node active-node" id="s3-n2">C2</div>
-        <div class="branch-line active-line"></div>
-        <div class="branch-node active-node" id="s3-n3">C3 (main)</div>
-        <div class="branch-line" id="s3-line-f"></div>
-        <div class="branch-node feature-node" id="s3-n4" style="opacity:0.25;">F1 (feature)</div>
+      <!-- Clean Redesigned Branch Visual -->
+      <div class="branch-tree-container">
+        <div class="branch-tree-row">
+          <!-- C1 -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node active-node">C1</div>
+            <span class="branch-node-label">base</span>
+          </div>
+
+          <div class="branch-connector-line active-line"></div>
+
+          <!-- C2 -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node active-node">C2</div>
+            <span class="branch-node-label">stable</span>
+          </div>
+
+          <div class="branch-connector-line active-line"></div>
+
+          <!-- C3 (main) -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node active-node" id="s3-n3">C3</div>
+            <span class="branch-node-label active-label" id="s3-label-main">main branch</span>
+          </div>
+
+          <div class="branch-connector-line" id="s3-line-f"></div>
+
+          <!-- F1 (feature) -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node feature-node" id="s3-n4" style="opacity:0.25;">F1</div>
+            <span class="branch-node-label purple" id="s3-label-feat" style="opacity:0.35;">feature/dark-mode</span>
+          </div>
+        </div>
       </div>
 
       <!-- Step 0 -->
@@ -903,7 +960,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 1:</strong> You are on the <code>main</code> branch at commit <code>C3</code>. Any changes directly made here risk breaking your production site.
+          <strong>Move 1:</strong> You are standing on the <code>main</code> branch at commit <code>C3</code>. Any changes directly made here risk breaking your production site.
         </div>
       </div>
 
@@ -920,7 +977,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 2:</strong> <code>git switch -c feature/dark-mode</code> spawns a new branch pointer right where you are. You have entered a safe sandbox!
+          <strong>Move 2:</strong> <code>git switch -c feature/dark-mode</code> spawns a new branch pointer right where you are. You have entered a safe sandbox!
         </div>
       </div>
 
@@ -937,7 +994,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 3:</strong> You make commit <code>F1</code>. Notice that <code>F1</code> exists ONLY on the <code>feature/dark-mode</code> branch! <code>main</code> is completely untouched.
+          <strong>Move 3:</strong> You make commit <code>F1</code>. Notice that <code>F1</code> exists ONLY on the <code>feature/dark-mode</code> branch! <code>main</code> is completely untouched.
         </div>
       </div>
 
@@ -954,17 +1011,13 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 4:</strong> You switch back to <code>main</code>. In your editor, the dark mode code temporarily disappears! It is safely stored inside <code>feature/dark-mode</code> awaiting a merge.
+          <strong>Move 4:</strong> You switch back to <code>main</code>. In your editor, the dark mode code temporarily disappears! It is safely stored inside <code>feature/dark-mode</code> awaiting a merge.
         </div>
       </div>
 
-      <!-- Sub-step buttons -->
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s3-tracker">Step 1 of 4</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="nextSubStep()">Next Move ⏭️</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s3-tracker">Move 1 of 4: On Main</span>
+        <span class="step-prompt-text">Click chips above or Next Move below</span>
       </div>
     </div>
 
@@ -980,12 +1033,30 @@
         <div class="step-chip" onclick="jumpToSubStep(2)">3. Clean Up Branch</div>
       </div>
 
-      <div class="branch-tree">
-        <div class="branch-node active-node">C3</div>
-        <div class="branch-line active-line"></div>
-        <div class="branch-node feature-node" id="s4-feat-node">F1</div>
-        <div class="branch-line" id="s4-merge-line"></div>
-        <div class="branch-node active-node" id="s4-merge-node" style="opacity:0.25;">M1 (Merged)</div>
+      <div class="branch-tree-container">
+        <div class="branch-tree-row">
+          <!-- C3 -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node active-node">C3</div>
+            <span class="branch-node-label active-label">main</span>
+          </div>
+
+          <div class="branch-connector-line active-line"></div>
+
+          <!-- F1 -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node feature-node active-node" id="s4-feat-node">F1</div>
+            <span class="branch-node-label purple" id="s4-feat-label">feature/dark-mode</span>
+          </div>
+
+          <div class="branch-connector-line" id="s4-merge-line"></div>
+
+          <!-- M1 -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node active-node" id="s4-merge-node" style="opacity:0.25;">M1</div>
+            <span class="branch-node-label green" id="s4-merge-label" style="opacity:0.35;">Merged into main</span>
+          </div>
+        </div>
       </div>
 
       <!-- Step 0 -->
@@ -1041,12 +1112,9 @@
         </div>
       </div>
 
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s4-tracker">Step 1 of 3</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="nextSubStep()">Next Move ⏭️</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s4-tracker">Move 1 of 3: Switch to Target</span>
+        <span class="step-prompt-text">Click chips above or Next Move below</span>
       </div>
     </div>
 
@@ -1070,10 +1138,7 @@
           </div>
         </div>
 
-        <div class="stage-zone" id="s5-wire-zone" style="justify-content:center;">
-          <span style="font-size:2rem;" id="s5-arrow">⬇️</span>
-          <span style="font-size:0.75rem; color:var(--text-muted);" id="s5-wire-text">Internet Sync</span>
-        </div>
+        <div class="stage-divider-arrow" id="s5-arrow">⬇️</div>
 
         <div class="stage-zone" id="s5-local-zone">
           <span class="zone-title">Local Repo (.git)</span>
@@ -1082,8 +1147,10 @@
           </div>
         </div>
 
+        <div class="stage-divider-arrow">➔</div>
+
         <div class="stage-zone" id="s5-work-zone">
-          <span class="zone-title">Your Working Files</span>
+          <span class="zone-title">Working Files</span>
           <div id="s5-work-box" class="file-badge" style="display:none; color:var(--accent-green);">
             ✨ footer.html (Updated)
           </div>
@@ -1093,7 +1160,7 @@
       <!-- Step 0 -->
       <div class="step-panel active" data-step-index="0">
         <div class="action-explainer">
-          <strong>Step 1:</strong> Your teammate committed and pushed commit <code>[d4e9b1]</code> to GitHub. Your computer doesn't know about it yet!
+          <strong>Move 1:</strong> Your teammate committed and pushed commit <code>[d4e9b1]</code> to GitHub. Your computer doesn't know about it yet!
         </div>
       </div>
 
@@ -1111,7 +1178,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 2 (Fetch):</strong> <code>git fetch</code> downloads the commits into your local cache without touching your editor files yet.
+          <strong>Move 2 (Fetch):</strong> <code>git fetch</code> downloads the commits into your local cache without touching your editor files yet.
         </div>
       </div>
 
@@ -1130,16 +1197,13 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Step 3 (Merge):</strong> <code>git pull</code> automatically performs both <strong>fetch</strong> and <strong>merge</strong> in a single command, updating your working files instantly!
+          <strong>Move 3 (Merge):</strong> <code>git pull</code> automatically performs both <strong>fetch</strong> and <strong>merge</strong> in a single command, updating your working files instantly!
         </div>
       </div>
 
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s5-tracker">Step 1 of 3</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="nextSubStep()">Next Move ⏭️</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s5-tracker">Move 1 of 3: Teammate Pushes</span>
+        <span class="step-prompt-text">Click chips above or Next Move below</span>
       </div>
     </div>
 
@@ -1156,18 +1220,36 @@
         <div class="step-chip" onclick="jumpToSubStep(3)">4. Push Revert to GitHub</div>
       </div>
 
-      <div class="branch-tree">
-        <div class="branch-node active-node">Good C1</div>
-        <div class="branch-line active-line"></div>
-        <div class="branch-node bug-node" id="s6-bad-node">Bug C2</div>
-        <div class="branch-line" id="s6-revert-line"></div>
-        <div class="branch-node revert-node" id="s6-revert-node" style="opacity:0.25;">Revert C2</div>
+      <div class="branch-tree-container">
+        <div class="branch-tree-row">
+          <!-- C1 -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node active-node">C1</div>
+            <span class="branch-node-label">Stable Base</span>
+          </div>
+
+          <div class="branch-connector-line active-line"></div>
+
+          <!-- C2 (Bug) -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node bug-node active-node" id="s6-bad-node">C2</div>
+            <span class="branch-node-label red" id="s6-bad-label">Buggy Commit</span>
+          </div>
+
+          <div class="branch-connector-line" id="s6-revert-line"></div>
+
+          <!-- R1 (Revert) -->
+          <div class="branch-node-wrapper">
+            <div class="branch-node revert-node" id="s6-revert-node" style="opacity:0.25;">R1</div>
+            <span class="branch-node-label green" id="s6-revert-label" style="opacity:0.35;">Revert of C2</span>
+          </div>
+        </div>
       </div>
 
       <!-- Step 0 -->
       <div class="step-panel active" data-step-index="0">
         <div class="action-explainer" style="border-left-color:var(--accent-red);">
-          🚨 <strong>Uh oh!</strong> Commit <code>Bug C2</code> broke the login button in production. You need to roll it back right away!
+          🚨 <strong>Uh oh!</strong> Commit <code>C2</code> broke the login button in production. You need to roll it back right away!
         </div>
       </div>
 
@@ -1185,7 +1267,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Identify the culprit:</strong> We found the commit hash: <code>b91c28f</code>.
+          <strong>Move 2:</strong> We inspect the log and find the commit hash: <code>b91c28f</code>.
         </div>
       </div>
 
@@ -1203,7 +1285,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>The Magic of `git revert`:</strong> It does NOT erase <code>b91c28f</code>! Instead, it creates a new forward commit <code>4f8812a</code> that exactly cancels out the bug!
+          <strong>Move 3 (The Magic of `git revert`):</strong> It does NOT erase <code>b91c28f</code>! Instead, it creates a new forward commit <code>4f8812a</code> that exactly cancels out the bug!
         </div>
       </div>
 
@@ -1221,16 +1303,13 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Zero Conflicts:</strong> Because it is a normal forward commit, you can safely push to GitHub with no force-pushing and zero issues for teammates!
+          <strong>Move 4 (Zero Conflicts):</strong> Because it is a normal forward commit, you can safely push to GitHub with no force-pushing and zero issues for teammates!
         </div>
       </div>
 
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s6-tracker">Step 1 of 4</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="nextSubStep()">Next Move ⏭️</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s6-tracker">Move 1 of 4: Bug Discovered</span>
+        <span class="step-prompt-text">Click chips above or Next Move below</span>
       </div>
     </div>
 
@@ -1256,7 +1335,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          You can't commit because the code is broken and unfinished. But you need a clean working directory right now!
+          <strong>Move 1:</strong> You cannot commit because the code is broken and unfinished. But you need a clean working directory right now!
         </div>
       </div>
 
@@ -1272,7 +1351,7 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Magic Stash!</strong> Git takes all your dirty edits and stores them in an internal shelf. Your workspace is instantly 100% clean! You can now fix the urgent bug.
+          <strong>Move 2 (Magic Stash):</strong> Git sweeps all dirty edits into an internal shelf. Your workspace is instantly 100% clean so you can fix the urgent bug!
         </div>
       </div>
 
@@ -1287,16 +1366,13 @@
           </div>
         </div>
         <div class="action-explainer">
-          <strong>Back to Work!</strong> <code>git stash pop</code> empties the pocket and restores your half-written work right where you left off.
+          <strong>Move 3 (Back to Work):</strong> <code>git stash pop</code> empties the pocket and restores your half-written work right where you left off.
         </div>
       </div>
 
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s7-tracker">Step 1 of 3</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="nextSubStep()">Next Move ⏭️</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s7-tracker">Move 1 of 3: Half-Finished Work</span>
+        <span class="step-prompt-text">Click chips above or Next Move below</span>
       </div>
     </div>
 
@@ -1335,21 +1411,21 @@ git push -u origin main</pre>
         </div>
       </div>
 
-      <div class="step-actions-bar">
-        <span style="font-size:0.85rem; color:var(--text-muted);" id="s8-tracker">Step 1 of 2</span>
-        <div style="display:flex; gap:8px;">
-          <button class="sub-btn prev-step" onclick="prevSubStep()">⏮️ Prev Move</button>
-          <button class="sub-btn next-step" onclick="goToSlide(0)">↺ Restart Slides</button>
-        </div>
+      <div class="slide-footer-status">
+        <span class="step-pill" id="s8-tracker">Move 1 of 2: Overview</span>
+        <span class="step-prompt-text">Click Restart to review anytime</span>
       </div>
     </div>
 
   </div>
 
-  <!-- Bottom Navigation Bar -->
+  <!-- Unified Bottom Control Bar (SINGLE set of buttons) -->
   <footer class="bottom-bar">
-    <div class="shortcut-hint">
-      Use <kbd>Space</kbd> or <kbd>→</kbd> for <strong>Next Move</strong> • <kbd>←</kbd> for <strong>Prev Move</strong> • <kbd>F</kbd> for fullscreen
+    <div class="bottom-status-block">
+      <span class="bottom-slide-info" id="bottom-status-summary">Slide 1 / 8 • Move 1 / 2</span>
+      <div class="shortcut-hint">
+        Use <kbd>→</kbd> / <kbd>Space</kbd> for <strong>Next Move</strong> • <kbd>←</kbd> for <strong>Prev Move</strong> • <kbd>F</kbd> for Fullscreen
+      </div>
     </div>
     <div class="nav-buttons">
       <button class="nav-btn prev" id="global-prev" onclick="prevSubStep()">⏮️ Previous Move</button>
@@ -1360,7 +1436,7 @@ git push -u origin main</pre>
   <script>
     const slides = document.querySelectorAll(".slide");
     const progressBar = document.getElementById("progress-bar");
-    const slideNum = document.getElementById("slide-num");
+    const bottomStatusSummary = document.getElementById("bottom-status-summary");
     const globalPrev = document.getElementById("global-prev");
     const globalNext = document.getElementById("global-next");
 
@@ -1397,14 +1473,14 @@ git push -u origin main</pre>
       // Update custom animations for specific slides
       runSlideAnimations(currentSlide, currentSubStep);
 
-      // Update tracker text
+      // Update tracker text in slide footer
       const tracker = activeSlideElem.querySelector(`[id^="s"][id$="-tracker"]`);
       if (tracker) {
-        tracker.textContent = `Step ${currentSubStep + 1} of ${maxSubSteps}`;
+        tracker.textContent = `Move ${currentSubStep + 1} of ${maxSubSteps}`;
       }
 
       // Update progress bar
-      const totalStepsApprox = 22; // aggregate steps across slides
+      const totalStepsApprox = 23;
       let cumulativeSteps = 0;
       for (let i = 0; i < currentSlide; i++) {
         cumulativeSteps += getSubStepsCount(i);
@@ -1413,14 +1489,21 @@ git push -u origin main</pre>
       const progress = Math.min(100, Math.round((cumulativeSteps / totalStepsApprox) * 100));
       progressBar.style.width = progress + "%";
 
-      slideNum.textContent = `Slide ${currentSlide + 1} / ${slides.length} (Step ${currentSubStep + 1}/${maxSubSteps})`;
+      // Update single bottom bar status
+      bottomStatusSummary.textContent = `Slide ${currentSlide + 1} of ${slides.length} • Move ${currentSubStep + 1} of ${maxSubSteps}`;
 
-      // Button labels
+      // Single bottom button state
       globalPrev.disabled = currentSlide === 0 && currentSubStep === 0;
       globalPrev.style.opacity = (currentSlide === 0 && currentSubStep === 0) ? "0.4" : "1";
 
       const isLastStepOfDeck = (currentSlide === slides.length - 1) && (currentSubStep === maxSubSteps - 1);
-      globalNext.textContent = isLastStepOfDeck ? "Finish 🚀" : (currentSubStep === maxSubSteps - 1 ? "Next Slide ▶" : "Next Move ⏭️");
+      if (isLastStepOfDeck) {
+        globalNext.textContent = "Finish 🚀";
+      } else if (currentSubStep === maxSubSteps - 1) {
+        globalNext.textContent = "Next Slide ▶";
+      } else {
+        globalNext.textContent = "Next Move ⏭️";
+      }
     }
 
     function nextSubStep() {
@@ -1434,6 +1517,9 @@ git push -u origin main</pre>
           currentSlide++;
           currentSubStep = 0;
           updatePresentation();
+        } else {
+          // Wrap around on finish
+          goToSlide(0);
         }
       }
     }
@@ -1477,7 +1563,6 @@ git push -u origin main</pre>
         const cloudStatus = document.getElementById("s2-cloud-status");
         const cloudText = document.getElementById("s2-cloud-text");
 
-        // Reset highlights
         [zoneWork, zoneStage, zoneRepo, zoneCloud].forEach(z => z.className = "stage-zone");
 
         if (stepIdx === 0) {
@@ -1511,25 +1596,35 @@ git push -u origin main</pre>
       if (slideIdx === 2) {
         const fLine = document.getElementById("s3-line-f");
         const fNode = document.getElementById("s3-n4");
+        const fLabel = document.getElementById("s3-label-feat");
         const mNode = document.getElementById("s3-n3");
+        const mLabel = document.getElementById("s3-label-main");
 
         if (stepIdx === 0) {
-          fLine.className = "branch-line";
+          fLine.className = "branch-connector-line";
           fNode.style.opacity = "0.2";
+          fLabel.style.opacity = "0.3";
           fNode.classList.remove("active-node");
           mNode.classList.add("active-node");
+          mLabel.classList.add("active-label");
         } else if (stepIdx === 1) {
-          fLine.className = "branch-line active-line";
+          fLine.className = "branch-connector-line active-line";
           fNode.style.opacity = "0.6";
+          fLabel.style.opacity = "0.6";
           fNode.classList.remove("active-node");
         } else if (stepIdx === 2) {
-          fLine.className = "branch-line active-line";
+          fLine.className = "branch-connector-line active-line";
           fNode.style.opacity = "1";
+          fLabel.style.opacity = "1";
           fNode.classList.add("active-node");
+          fLabel.classList.add("active-label");
           mNode.classList.remove("active-node");
+          mLabel.classList.remove("active-label");
         } else if (stepIdx === 3) {
           fNode.classList.remove("active-node");
+          fLabel.classList.remove("active-label");
           mNode.classList.add("active-node");
+          mLabel.classList.add("active-label");
         }
       }
 
@@ -1537,14 +1632,17 @@ git push -u origin main</pre>
       if (slideIdx === 3) {
         const mLine = document.getElementById("s4-merge-line");
         const mNode = document.getElementById("s4-merge-node");
+        const mLabel = document.getElementById("s4-merge-label");
 
         if (stepIdx < 1) {
-          mLine.className = "branch-line";
+          mLine.className = "branch-connector-line";
           mNode.style.opacity = "0.2";
+          mLabel.style.opacity = "0.3";
           mNode.classList.remove("active-node");
         } else {
-          mLine.className = "branch-line active-line";
+          mLine.className = "branch-connector-line active-line";
           mNode.style.opacity = "1";
+          mLabel.style.opacity = "1";
           mNode.classList.add("active-node");
         }
       }
@@ -1574,18 +1672,23 @@ git push -u origin main</pre>
       if (slideIdx === 5) {
         const rLine = document.getElementById("s6-revert-line");
         const rNode = document.getElementById("s6-revert-node");
+        const rLabel = document.getElementById("s6-revert-label");
         const badNode = document.getElementById("s6-bad-node");
+        const badLabel = document.getElementById("s6-bad-label");
 
         if (stepIdx < 2) {
-          rLine.className = "branch-line";
+          rLine.className = "branch-connector-line";
           rNode.style.opacity = "0.2";
+          rLabel.style.opacity = "0.3";
           rNode.classList.remove("active-node");
           badNode.style.borderColor = "var(--accent-red)";
+          badLabel.style.textDecoration = "none";
         } else {
-          rLine.className = "branch-line active-line";
+          rLine.className = "branch-connector-line active-line";
           rNode.style.opacity = "1";
+          rLabel.style.opacity = "1";
           rNode.classList.add("active-node");
-          badNode.style.textDecoration = "line-through";
+          badLabel.style.textDecoration = "line-through";
         }
       }
     }
