@@ -9,4 +9,3 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.textContent = "Checked & Verified! ✅";
   });
 });
-// Demo test line for revert demonstration
