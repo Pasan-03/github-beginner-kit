@@ -685,6 +685,84 @@
       font-size: 0.88rem;
       line-height: 1.6;
     }
+
+    /* Doctor Strange Meme Card for Branching Humor */
+    .meme-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(135deg, rgba(137, 87, 229, 0.15), rgba(31, 111, 235, 0.1));
+      border: 1px solid rgba(188, 140, 255, 0.35);
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin: 10px 0 14px;
+    }
+
+    .meme-img-container {
+      position: relative;
+      flex-shrink: 0;
+      width: 130px;
+      height: 85px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(188, 140, 255, 0.5);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .meme-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .meme-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.82);
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: #ffbd2e;
+      text-align: center;
+      padding: 2px 4px;
+      letter-spacing: 0.3px;
+    }
+
+    .meme-text {
+      flex: 1;
+    }
+
+    .meme-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--accent-purple);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .meme-text p {
+      font-size: 0.84rem;
+      color: var(--text-light);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .sorcerer-tip {
+      background: rgba(210, 153, 34, 0.12);
+      border: 1px solid rgba(210, 153, 34, 0.35);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 0.82rem;
+      color: #e3b341;
+      margin: 10px 0 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
   </style>
 </head>
 <body>
@@ -903,6 +981,19 @@
       <span class="slide-tag">Animated Feature Flow #2</span>
       <h2 class="title">🌿 Branching: Work in Parallel Universes</h2>
       <p class="subtitle">Never break production! Watch how a branch diverts work safely:</p>
+
+      <!-- Doctor Strange Parallel Universe Meme for Humor -->
+      <div class="meme-card">
+        <div class="meme-img-container">
+          <img src="assets/doctor-strange.jpg" alt="Doctor Strange Multiverse" class="meme-img" />
+          <div class="meme-caption">14,000,605 branches</div>
+        </div>
+        <div class="meme-text">
+          <span class="meme-tag">🧙 Doctor Strange's Multiverse Law</span>
+          <p><em>"I went forward in time to view 14,000,605 parallel branches... in only one did the code compile on the first try!"</em></p>
+          <p style="margin-top:3px; font-size:0.78rem; color:var(--text-muted);">In Git, branches are parallel dimensions. Experiment, break things, cast spells—your <code>main</code> timeline remains safe!</p>
+        </div>
+      </div>
 
       <!-- Stepper Chips -->
       <div class="step-stepper" id="s3-chips">
@@ -1212,6 +1303,10 @@
       <span class="slide-tag">Animated Undo Flow #5</span>
       <h2 class="title">⏪ Git Revert: The Safe Emergency Brake</h2>
       <p class="subtitle">A bug got committed? Here is how to safely undo it without destroying history:</p>
+
+      <div class="sorcerer-tip">
+        <span>⏱️ <strong>Sorcerer Supreme Pro Tip:</strong> You don't need the Time Stone to undo bugs in production. <code>git revert</code> creates an inverse forward commit that restores balance to your timeline without breaking teammate repos!</span>
+      </div>
 
       <div class="step-stepper" id="s6-chips">
         <div class="step-chip active" onclick="jumpToSubStep(0)">1. Bug Discovered</div>
